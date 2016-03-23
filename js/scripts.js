@@ -18,15 +18,11 @@ $(document).ready(function()  {
   var inputBand = $("input#new-band-name").val();
 
   var newNowPlay = new Songbook(inputSong, inputBand);
+    $("ul#show-song").append("<li>" + newNowPlay.nowPlay() + "</li>");
+    $("#show-song").show();
+    $("#show-song h2").text(newNowPlay.nowPlay());
+    $(".song-name").text(newNowPlay.song);
+    $(".band-name").text(newNowPlay.band);
 
-  $("ul#songlist").append("<li>" + newNowPlay.nowPlay() + "</li>");
-  // $(".song").last().click(function() {
-  //   $("#show-song").show();
-  //   $("#show-song h2").text(newNowPlay.song);
-  //   $("#new-song-name").text(newNowPlay.song);
-  //   $("#new-band-name").text(newNowPlay.band);
-  //
-  //
-  // })
   });
 });

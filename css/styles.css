@@ -1,12 +1,3 @@
-#show-song {
+#songs {
   display: none;
-}
-
-.song {
-  cursor: pointer;
-  color: #0088cc;
-}
-
-.song:hover {
-  text-decoration: underline;
 }
